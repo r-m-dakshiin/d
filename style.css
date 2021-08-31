@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-image: url(bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+#header{
+    text-align: center;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 70;
+    color: white;
+}
+#poem{
+    font-size: 40;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  align-content: center;
+  position: relative;
+  left: 40%;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+    
+}
+.flip-card-back p{
+  margin-top: 70; 
+  font-size: 25;
+}
+.flip-card-back h1{
+ 
+  font-size: 45;
+}
